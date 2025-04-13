@@ -73,7 +73,7 @@ export OPENSEARCH_CA_CERTS=          # Path to CA certificates
 
 The server can be configured through command-line arguments:
 
-To run the server go to src goler and run 
+To run the server go to src Folder and run:
 ```bash
 python -m server --host 0.0.0.0 --port 9900
 ```
