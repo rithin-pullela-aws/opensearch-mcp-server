@@ -1,0 +1,28 @@
+[project]
+name = "opensearch-mcp-server"
+version = "0.1.0"
+description = "MCP Server with tools to interact with openSearch cluster"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp>=1.6.0",
+    "httpx",
+    "mcp-server",
+    "starlette",
+    "uvicorn",
+    "opensearch-py>=2.0.0",
+    "requests>=2.31.0"
+]
+[[project.authors]]
+name = "rithin-pullela-aws"
+email = "rithinp@amazon.com"
+
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[project.scripts]
+opensearch-mcp-server = "src:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
