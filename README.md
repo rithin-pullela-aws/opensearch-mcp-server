@@ -23,8 +23,8 @@ A Model Context Protocol (MCP) server that provides tools for interacting with O
 pip install uv
 
 # Clone the repository
-git clone https://github.com/your-org/opensearch-mcp-sse.git
-cd opensearch-mcp-sse
+git clone git@github.com:rithin-pullela-aws/opensearch-mcp-server.git
+cd opensearch-mcp-server
 
 # Create and activate virtual environment
 uv venv .venv
